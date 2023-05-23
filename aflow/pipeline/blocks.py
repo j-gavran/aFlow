@@ -1,4 +1,4 @@
-from aflow.pipeline.blocks import Block
+from aflow.pipeline.pipes import Block
 
 
 class AggregateResultsBlock(Block):
@@ -15,8 +15,8 @@ class AggregateResultsBlock(Block):
 
         return self
 
-    def __getstate__(self):
-        attributes = self.__dict__.copy()
-        attributes["results"] = None
-        attributes["aggregated_results"] = None
-        return attributes
+    # def __getstate__(self):
+    #     attributes = self.__dict__.copy()
+    #     attributes["results"] = None
+    #     attributes["aggregated_results"] = None
+    #     return attributes
