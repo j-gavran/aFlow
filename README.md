@@ -1,2 +1,2 @@
 # AnalysisFlow
-Parallel computing pipelines with dask for HEP.
+Toy parallel computing pipeline with dask.
